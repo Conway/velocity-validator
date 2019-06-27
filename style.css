@@ -1,0 +1,12 @@
+.top-buffer {
+  margin-top: 20px;
+}
+textarea {
+  font-family: monospace;
+  max-height: 50vh;
+  overflow: scroll;
+}
+#errorField {
+  font-family: monospace;
+  text-align:left;
+}

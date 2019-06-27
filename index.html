@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>VTL Validator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body class="text-center">
+    <div class="container">
+      <div class="header text-center top-buffer">
+        <h3 class="display-4">Velocity Template Language Validator</h3>
+        <hr>
+      </div>
+      <div class="row justify-content-center-top-buffer collapse" id="successAlert">
+        <div class="col-md">
+          <div class="alert alert-success" role="alert">
+            This looks like a valid template!
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center-top-buffer collapse" id="failAlert">
+        <div class="col-md">
+          <div class="alert alert-danger" role="alert">
+            This is not a valid template:
+          </div>
+          <p class="form-control" id="errorField"></p>
+        </div>
+      </div>
+      <div class="row justify-content-center top-buffer">
+        <div class="col-md-8">
+          <textarea class="form-control vlt-input" rows=24 id="inputField" name="textarea"></textarea>
+        </div>
+      </div>
+      <div class="row justify-content-center top-buffer">
+          <button type="button" class="btn btn-primary" id="submit">Validate</button>
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
